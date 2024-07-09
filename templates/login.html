@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="../static/login.css">
+</head>
+<body>
+    <div class="login">
+        <div class="logo">Study Timer</div>
+        <section class="content">
+            <h1>Welcome to Study Timer</h1>
+            <form method="POST" action="">
+                <p>Email</p>
+                <div class="textArea">
+                    <input type="email" placeholder="Email" id="email" name="email" required>
+                </div>
+                <p>Password</p>
+                <div class="textArea">
+                    <input type="password" placeholder="Password" id="password" name="password" required>
+                </div>
+                <button type="submit" class="signIn">Sign In</button>
+            </form>
+            <label id="cancel-el">Cancel</label>
+        </section>
+        <div class="validationMessages" id="validationMessages"></div>
+    </div>
+    <script src="../static/login.js"></script>
+</body>
+</html>

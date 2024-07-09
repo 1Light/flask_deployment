@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="../static/style.css">
+</head>
+<body>
+    <div>
+    <div class="login">
+        <div class="logo">Study Timer</div>
+        <section class="content">
+        <h1>Welcome to Study Timer</h1>
+        <form method="POST" action="">
+        <p>Name</p>
+        <div class="textArea"><input type="text" placeholder="Name" id="name" name="name"></div>
+        <p>Email</p>
+        <div class="textArea"><input type="email" placeholder="Email" id="email" name="email"></div>
+        <p>Username</p>
+        <div class="textArea"><input type="text" placeholder="Username" id="username" name="username"></div>
+        <p>Password</p>
+        <div class="textArea"><input type="password" placeholder="Password" id="password" name="password"></div>
+        <p> Confirm Password</p>
+        <div class="textArea"><input type="password" placeholder="Confirm Password" id="confirmPassword"></div>
+        <button class="signUp" type="submit" onclick="validateForm()">Sign Up</button>
+        </form>
+        <span class="row">
+        <a href="#" target="_blank">Sign In</a>
+        <a href="https://zealous-page.netlify.app/">Cancel</a>
+        </span>
+        </section>
+        <div class="validationMessages" id="validationMessages"></div>
+    </div>
+    <script src="../static/script.js"></script>
+</body>
+</html>
