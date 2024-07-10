@@ -22,15 +22,19 @@
         <p>Password</p>
         <div class="textArea"><input type="password" placeholder="Password" id="password" name="password"></div>
         <p> Confirm Password</p>
-        <div class="textArea"><input type="password" placeholder="Confirm Password" id="confirmPassword"></div>
+        <div class="textArea"><input type="password" placeholder="Confirm Password" id="confirm_password" name="confirm_password"></div>
         <button class="signUp" type="submit" onclick="validateForm()">Sign Up</button>
         </form>
         <span class="row">
-        <a href="#" target="_blank">Sign In</a>
-        <a href="https://zealous-page.netlify.app/">Cancel</a>
+        <a href="{{ url_for('login') }}">Login</a>
+        <a href="{{ url_for('home') }}">Cancel</a>
         </span>
         </section>
-        <div class="validationMessages" id="validationMessages"></div>
+        <div class="validationMessages" id="validationMessages">
+            {% if message %}
+            <div class="alert alert-warning">{{ message }}</div>
+        {% endif %}
+        </div>
     </div>
     <script src="../static/script.js"></script>
 </body>

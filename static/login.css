@@ -88,11 +88,11 @@ a {
   
 .validationMessages {
    background-color: white;
-   width: 20rem;
-   height: 3rem;
-   margin-top: 9.5rem; 
-   margin-left: 74%;
-   margin-right: 4.5%;
+   width: 12rem;
+   height: 1.7rem;
+   margin-top: 13rem; 
+   margin-left: 60%;
+   margin-right: 11%;
    opacity: 1;
    color: black;
    border: 2px solid black;
@@ -100,4 +100,5 @@ a {
    top: 0;
    right: 0;
    transform: translateY(100%);
+   padding-left: 1rem;
   }

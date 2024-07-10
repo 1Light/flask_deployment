@@ -22,9 +22,13 @@
                 </div>
                 <button type="submit" class="signIn">Sign In</button>
             </form>
-            <label id="cancel-el">Cancel</label>
+            <a id="cancel-el" href="{{ url_for('home') }}">Cancel</a>
         </section>
-        <div class="validationMessages" id="validationMessages"></div>
+        <div class="validationMessages" id="validationMessages">
+            {% if message %}
+            <div class="alert alert-warning">{{ message }}</div>
+        {% endif %}
+        </div>
     </div>
     <script src="../static/login.js"></script>
 </body>

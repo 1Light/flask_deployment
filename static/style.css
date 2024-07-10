@@ -87,11 +87,11 @@ a {
     transition: opacity 0.3s ease; 
   }
   
-  .validationMessages.hide {
+.validationMessages.hide {
     opacity: 0;
   }
   
-  .validationMessages {
+.validationMessages {
    background-color: white;
    width: 20rem;
    height: 3rem;
